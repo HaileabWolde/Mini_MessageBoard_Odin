@@ -9,8 +9,15 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 
+const links = [
+  { href: "/", text: "Home" },
+  { href: "about", text: "About" },
+];
+
+const users = ["Rose", "Cake", "Biff"];
+
 app.get("/", (req, res) => {
-  res.render("index", { message: "EJS rocks!" });
+  res.render("index", { users: users });
 });
 
 const PORT = 3000;

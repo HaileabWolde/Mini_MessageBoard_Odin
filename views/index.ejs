@@ -1,5 +1,6 @@
-<html>
-  <body>
-    <%= message %>
-  </body>
-</html>
+<ul>
+  <% users.forEach((user) => { %>
+    <%- include('user', {user: user}); %>
+  <% }); %>
+  
+</ul>
