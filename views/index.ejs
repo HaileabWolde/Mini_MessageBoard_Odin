@@ -1,6 +1,8 @@
 <ul>
-  <% users.forEach((user) => { %>
-    <%- include('user', {user: user}); %>
+  <% messages.forEach((message) => { %>
+   <li>
+    <%=message.text%>
+   </li>
   <% }); %>
   
 </ul>

@@ -9,10 +9,6 @@ app.set("view engine", "ejs");
 
 
 
-
-
-app.use("/", indexRouter);
-
 const PORT = 3000;
 app.listen(PORT, (error) => {
   // This is important!
@@ -23,3 +19,8 @@ app.listen(PORT, (error) => {
   }
   console.log(`My first Express app - listening on port ${PORT}!`);
 });
+
+app.use("/", indexRouter);
+app.use((req,res)=>{
+    res.status(400).send('Page not found')
+})
