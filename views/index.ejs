@@ -37,7 +37,24 @@
      
     </div>  
      <dialog id="myDialog">
-        <h1>Fuck off</h1>
+       <form method="POST" action="/new" id="myform">
+                <h1>Add New Message</h1>
+                <label for="Name">Name</label>
+                <input 
+                type="text" id="Name" placeholder="Name" name="Name">
+                <span id="Name"></span>
+                <label for="Message">Message</label>
+               <textarea
+               rows="8"
+               cols="50"
+               >
+
+               </textarea>
+                <span id="Message"></span>
+               
+               
+                <button type="submit">Submit</button>
+            </form>
       </dialog>
   <script src="/script.js"></script>
 </body>
