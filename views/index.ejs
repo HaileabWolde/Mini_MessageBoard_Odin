@@ -42,18 +42,26 @@
                 <label for="Name">Name</label>
                 <input 
                 type="text" id="Name" placeholder="Name" name="Name">
-                <span id="Name"></span>
+                <span id="name"></span>
                 <label for="Message">Message</label>
                <textarea
                rows="8"
                cols="50"
+               id="Message"
                >
 
                </textarea>
-                <span id="Message"></span>
+                <span id="message"></span>
                
+               <div class="buttons">
+                   <button 
+                   type="submit" 
+                   class="submit">Submit</button>
+                   <button
+                   type="button"  
+                   id="cancelButton">Cancel</button>
+               </div>
                
-                <button type="submit">Submit</button>
             </form>
       </dialog>
   <script src="/script.js"></script>

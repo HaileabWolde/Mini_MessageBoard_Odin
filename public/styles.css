@@ -79,7 +79,7 @@ input,textarea{
     width: 90%;
    
 }
-form>button{
+.submit{
     background-color: #0c85c6;
     font-family: serif;
     width: 90%;
@@ -103,4 +103,26 @@ input:invalid {
   }
 input::placeholder {
     text-align: center;
+  }
+
+  .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+  }
+  #cancelButton{
+ background-color: red;
+    font-family: serif;
+    width: 90%;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0.5rem;
+   border: 0.5px solid transparent;
   }
