@@ -3,11 +3,16 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
- 
- 
- 
   background-color: #FAFAFA;
-    color: black;
+  
+ 
+}
+h1{
+    font-size: larger;
+    font-family: serif;
+    font-weight: bold;
+    color: #1C274C;
+    text-align: center;
 }
 .header{
   width: 100%;
@@ -53,4 +58,6 @@ body {
     cursor: pointer;
     display: flex;
     display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
