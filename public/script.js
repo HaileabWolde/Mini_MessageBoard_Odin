@@ -19,6 +19,7 @@ showButton.addEventListener('click', () => {
 cancelButton.addEventListener('click', (e) => {
     e.preventDefault();           // stops form submission
     dialog.style.display = 'none'
+    dialog.close()
 });
 
 // Validate The Form
@@ -44,8 +45,9 @@ function validateForm(event){
           alert("Your Message Have been added succesfully")
           Name.value = "";
           message.value = "";
-       dialog.close()
+    
         dialog.style.display = 'none'
+         dialog.close()
 
     }
 }
