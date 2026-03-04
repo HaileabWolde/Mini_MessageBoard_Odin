@@ -12,6 +12,7 @@
  
     
     <div class="header">
+      <h1>MessageBoard</h1>
         <i 
         id="showDialogButton"
         class="fa fa-comments fa-2x" aria-hidden="true" 
@@ -23,8 +24,10 @@
     <div class="container">
       <div class="sidebar">
          <% messages.map((message) => { %>
-            <div >
-               <p><%= message.user%></p>
+            <div class="user" >
+            <a href="/?user=<%= encodeURIComponent(message.user) %>">
+ <h1><%= message.user %></h1> 
+</a>
             </div>
                 
            <% }) %>

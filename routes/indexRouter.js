@@ -8,6 +8,7 @@ const indexRouter = Router();
 
 
 indexRouter.get("/", getMessage)
+
 indexRouter.post("/new", (req, res)=>{
    const { Name, Message} = req.body;
   

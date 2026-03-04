@@ -6,6 +6,9 @@ const message = document.getElementById('Message')
 const nameError = document.getElementById('name')
 const messageError = document.getElementById('message')
 const cancelButton = document.getElementById('cancelButton')
+const eachUser = document.getElementsByClassName('user')
+
+
 const regex = /^[a-zA-Z]+$/;
 const messageRegex = /./s;
 
@@ -54,6 +57,12 @@ function validateForm(event){
     }
 }
 
+function userMessage(e){
+    console.log(e.target.innerText)
+}
 myform.addEventListener('submit', validateForm)
+for(let user of eachUser){
+    user.addEventListener("click", userMessage);
+}
 //Close the modal dialog
 
