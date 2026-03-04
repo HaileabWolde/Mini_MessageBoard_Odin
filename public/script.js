@@ -43,11 +43,13 @@ function validateForm(event){
     else {
         messageError.style.display = "none"
           alert("Your Message Have been added succesfully")
-          Name.value = "";
-          message.value = "";
-    
+        
+      
         dialog.style.display = 'none'
          dialog.close()
+         // Option A: Let the form submit normally (recommended)
+        myform.removeEventListener('submit', validateForm); // optional safety
+        myform.submit();   // ← this triggers the real POST
 
     }
 }
