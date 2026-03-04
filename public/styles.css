@@ -135,9 +135,9 @@ input::placeholder {
 .line{
   border: 1px solid black
 }
-.each:hover{
-   background-color: #54ACDB;
-    scale: 105%;
+a>h1:hover{
+ 
+    scale: 110%;
 }
   /*
   .mobileResponsive{

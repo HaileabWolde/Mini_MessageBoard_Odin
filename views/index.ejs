@@ -30,7 +30,7 @@
          <% messages.map((message) => { %>
             <div class="user" >
             <a href="/?user=<%= encodeURIComponent(message.user) %>">
- <h1 class="each"><%= message.user %></h1> 
+ <h1 class="each"><%= message.user.toUpperCase()%></h1> 
 </a>
             </div>
               <div class="line">
