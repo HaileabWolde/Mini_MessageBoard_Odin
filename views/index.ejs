@@ -44,7 +44,10 @@
       
           <% messages.map((message) => { %>
             <div class="message">
-               <p><%= message.text%></p>
+              <% message.text.map((eachText) => { %>
+                 <p><%= eachText %></p>
+          
+           <% }) %>
             </div>
           
            <% }) %>
