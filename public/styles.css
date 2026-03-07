@@ -139,8 +139,10 @@ a>h1:hover{
  
     scale: 110%;
 }
-  /*
+
+@media (max-width: 860px){
   .mobileResponsive{
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -151,3 +153,9 @@ a>h1:hover{
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.06);
       border-left: 4px solid rgba(0, 0, 0, .2);
   }
+  .sidebar{
+    visibility: hidden;
+  }
+}
+  
+  
