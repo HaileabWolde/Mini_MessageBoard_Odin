@@ -1,5 +1,6 @@
 const dialog = document.getElementById('myDialog');
 const showButton = document.getElementById('showDialogButton');
+const showSideBar = document.getElementById('showSidebarButton');
 const myform = document.getElementById('myform')
 const Name = document.getElementById('Name')
 const message = document.getElementById('Message')
@@ -7,6 +8,7 @@ const nameError = document.getElementById('name')
 const messageError = document.getElementById('message')
 const cancelButton = document.getElementById('cancelButton')
 const eachUser = document.getElementsByClassName('user')
+const mobileSideBar = document.querySelector('.mobileResponsive')
 
 
 const regex = /^[a-zA-Z]+$/;
@@ -18,6 +20,10 @@ showButton.addEventListener('click', () => {
     dialog.style.display = 'block'
 });
 
+showSideBar.addEventListener('click', ()=>{
+    console.log("Fuck off")
+    mobileSideBar.style.display = 'block'
+})
 
 cancelButton.addEventListener('click', (e) => {
     e.preventDefault();           // stops form submission

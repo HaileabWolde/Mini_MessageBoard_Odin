@@ -142,7 +142,7 @@ a>h1:hover{
 
 @media (max-width: 860px){
   .mobileResponsive{
-    display: none;
+  display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -152,10 +152,16 @@ a>h1:hover{
     background-color: white;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.06);
       border-left: 4px solid rgba(0, 0, 0, .2);
+       animation: bounce 0.4s ease-out; 
   }
   .sidebar{
     visibility: hidden;
   }
+
 }
+  @keyframes bounce{
+     0%   { transform: translate(-50px);  }
   
+  100% { transform: translate(0px) }
+  }
   
