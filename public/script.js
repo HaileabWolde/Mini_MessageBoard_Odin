@@ -9,8 +9,8 @@ const messageError = document.getElementById('message')
 const cancelButton = document.getElementById('cancelButton')
 const eachUser = document.getElementsByClassName('user')
 const mobileSideBar = document.querySelector('.mobileResponsive')
-
-
+const exitSideBar = document.querySelector('.exitDirection')
+const exitButton = document.getElementById('exitButton')
 const regex = /^[a-zA-Z]+$/;
 const messageRegex = /./s;
 
@@ -21,9 +21,12 @@ showButton.addEventListener('click', () => {
 });
 
 showSideBar.addEventListener('click', ()=>{
-    console.log("Fuck off")
+   
     mobileSideBar.style.display = 'block'
 })
+ exitButton.addEventListener('click', ()=>{
+mobileSideBar.style.display = 'none'
+ })
 
 cancelButton.addEventListener('click', (e) => {
     e.preventDefault();           // stops form submission
@@ -63,12 +66,8 @@ function validateForm(event){
     }
 }
 
-function userMessage(e){
-    console.log(e.target.innerText)
-}
+
 myform.addEventListener('submit', validateForm)
-for(let user of eachUser){
-    user.addEventListener("click", userMessage);
-}
+
 //Close the modal dialog
 

@@ -139,24 +139,42 @@ a>h1:hover{
  
     scale: 110%;
 }
-
+.mobileResponsive{
+  display: none;
+}
+#showSidebarButton{
+  display: none;
+}
 @media (max-width: 860px){
   .mobileResponsive{
-  display: none;
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    padding: 2rem;
     top: 0;
     left: 0;
     z-index: 999;
     height: 100%;
-    width: 30%;
+    width: 20%;
     background-color: white;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.06);
       border-left: 4px solid rgba(0, 0, 0, .2);
        animation: bounce 0.4s ease-out; 
+     
   }
   .sidebar{
     visibility: hidden;
   }
+  h1{
+    font-size: 25px;
+  }
+  .message{
+    width: auto;
+    
+  }
+  #showSidebarButton{
+  display: block;
+}
 
 }
   @keyframes bounce{
