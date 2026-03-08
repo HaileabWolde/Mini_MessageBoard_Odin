@@ -150,12 +150,12 @@ a>h1:hover{
     display: flex;
     flex-direction: column;
     position: absolute;
-    padding: 2rem;
+    padding: 1rem;
     top: 0;
     left: 0;
     z-index: 999;
     height: 100%;
-    width: 20%;
+    width: auto;
     background-color: white;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.06);
       border-left: 4px solid rgba(0, 0, 0, .2);
